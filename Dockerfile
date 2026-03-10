@@ -3,4 +3,3 @@ WORKDIR /home/appuser/app
 COPY pyproject.toml .
 COPY src/ src/
 RUN pip install -e ".[dev]"
-CMD ["peertube-to-amb"]
