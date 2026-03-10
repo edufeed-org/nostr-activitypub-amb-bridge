@@ -1,0 +1,2 @@
+[console_scripts]
+peertube-to-amb = peertube_to_amb.cli:main

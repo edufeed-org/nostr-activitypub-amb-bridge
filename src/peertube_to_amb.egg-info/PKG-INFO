@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: peertube-to-amb
+Version: 0.1.0
+Summary: Bridge PeerTube videos to AMB (Nostr) events
+Requires-Python: >=3.12
+Requires-Dist: nostr-sdk
+Requires-Dist: requests
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-asyncio; extra == "dev"
+Requires-Dist: requests-mock; extra == "dev"
+Requires-Dist: pytest-mock; extra == "dev"

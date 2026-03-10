@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "peertube-to-amb"
+version = "0.1.0"
+description = "Bridge PeerTube videos to AMB (Nostr) events"
+requires-python = ">=3.12"
+license = {text = "MIT"}
+dependencies = [
+    "nostr-sdk",
+    "requests",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-asyncio",
+    "requests-mock",
+    "pytest-mock",
+]
+
+[project.scripts]
+peertube-to-amb = "peertube_to_amb.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]

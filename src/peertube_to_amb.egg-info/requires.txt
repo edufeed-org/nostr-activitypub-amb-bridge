@@ -1,0 +1,8 @@
+nostr-sdk
+requests
+
+[dev]
+pytest
+pytest-asyncio
+requests-mock
+pytest-mock
