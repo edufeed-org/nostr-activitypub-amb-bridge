@@ -1,3 +1,4 @@
+LICENSE
 README.md
 pyproject.toml
 src/peertube_to_amb/__init__.py
